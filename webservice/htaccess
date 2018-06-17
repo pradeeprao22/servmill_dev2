@@ -1,0 +1,31 @@
+#Changing non-www to www
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+#Options +FollowSymlinks
+RewriteCond %{HTTP_REFERER} petitions.whitehouse\.gov [NC]
+RewriteRule .* - [F]
+
+#Clean urls
+RewriteRule ^jobs careers.php [L]
+RewriteRule ^resetpassword reset.php [L]
+RewriteRule ^activesoon comingsoon.php [L]
+RewriteRule ^security privacy.php [L]
+RewriteRule ^logged$ login.php [L]
+RewriteRule ^myhome$ home.php [L]
+RewriteRule ^categories$ servicecateg.php [L]
+RewriteRule ^about$ contact.php [L]
+RewriteRule ^account/([0-9a-zA-Z]+) profile.php?name=$1 [NC,L]
+RewriteRule ^showdetails/([0-9a-zA-Z]+) details.php?id=$1&title=$2 [NC,L]
+RewriteRule ^services/([0-9a-zA-Z]+) showservice.php?id=$1 [NC,L]
+
+ErrorDocument 403 /errors/error.php
+ErrorDocument 404 /errors/error.php
+ErrorDocument 405 /errors/error.php
+ErrorDocument 408 /errors/error.php
+ErrorDocument 500 /errors/error.php
+ErrorDocument 502 /errors/error.php
+ErrorDocument 504 /errors/error.php

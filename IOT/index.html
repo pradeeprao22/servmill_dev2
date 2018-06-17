@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>IOT for Agriculture and Environment | Servmill</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<!-- //js -->
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="IOT for Agriculture, IOT for Environment, IOT Servmill" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+				function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- //for-mobile-apps -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!-- start-smoth-scrolling -->
+</head>
+
+<body>
+<!-- banner -->
+	<div id="home" class="banner">
+	<div class="container">
+		<div class="navi">
+				<div class="head-logo">
+					<a href="index.html"><img src="https://s3-ap-southeast-1.amazonaws.com/servmillimages/servmilllogo.png" alt=" "></a>
+				</div>
+				<div class="banner-nav">
+					<span class="menu"><img src="images/menu.png" alt=" "/></span>
+						<nav class="cl-effect-3">
+							<ul class="nav1">
+								<li class="active"><a href="#home" class="scroll">Home</a></li>
+								<li><a href="#about" class="scroll">ABOUT</a></li>
+								<li><a href="#products" class="scroll">PRODUCTS</a></li>
+								<li><a href="#pricing" class="scroll">PRICING</a></li>
+								<li><a href="#contact" class="scroll">CONTACT</a></li>
+							</ul>
+						</nav>
+				</div>
+				<div class="clearfix"> </div>
+		</div>
+				<!-- script for menu -->
+					<script>
+						$( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+				<!-- //script for menu -->
+		<div class="banner-info">
+			<div class="banner-info-left">
+				<h3>IOT for Agriculture and<span> Environment </span></h3>
+				<p>Control all your systems in <span>one unique platform.</span></p>
+			</div>
+			<div class="banner-info-right">
+				<div class="banner-info-fig">
+					<a href="images/4.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="img-responsive" src="images/4-.jpg" />
+					</a>
+				</div>
+				<div class="banner-info-fig">
+					<a href="images/5.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="img-responsive" src="images/5-.jpg" />
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="banner-info-fig">
+					<a href="images/6.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="img-responsive" src="images/6-.jpg" />
+					</a>
+				</div>
+				<div class="banner-info-fig">
+					<a href="images/7.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="img-responsive" src="images/7-.jpg" />
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+
+			<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script>
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+				<!-- Portfolio Ends Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						var filterList = {
+							init: function () {
+								// MixItUp plugin
+							// http://mixitup.io
+							$('#portfoliolist').mixitup({
+								targetSelector: '.portfolio',
+								filterSelector: '.filter',
+								effects: ['fade'],
+								easing: 'snap',
+								// call the hover effect
+								onMixEnd: filterList.hoverEffect()
+							});
+						},
+						hoverEffect: function () {
+							// Simple parallax effect
+							$('#portfoliolist .portfolio').hover(
+								function () {
+									$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+									$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+								},
+								function () {
+									$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+									$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+								}
+							);
+						}
+					};
+					// Run the show!
+						filterList.init();
+					});
+					</script>
+	</div>
+	</div>
+<!-- //banner -->
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+	<div class="container">
+<!-- Slider-starts-Here -->
+				<script src="js/responsiveslides.min.js"></script>
+				 <script>
+				    // You can also use "$(window).load(function() {"
+				    $(function () {
+				      // Slideshow 4
+				      $("#slider3").responsiveSlides({
+				        auto: true,
+				        pager: true,
+				        nav: false,
+				        speed: 500,
+				        namespace: "callbacks",
+				        before: function () {
+				          $('.events').append("<li>before event fired.</li>");
+				        },
+				        after: function () {
+				          $('.events').append("<li>after event fired.</li>");
+				        }
+				      });
+
+				    });
+				  </script>
+			<!--//End-slider-script -->
+			<div  id="top" class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="banner-bottom-info">
+							<h3>Flexibility</h3>
+							<p>
+IoT in agriculture has become one of the fastest growing fields (pun intended) in the M2M space.
+Today, more than ever before, farmers, ranchers, and conservationists need a method to more effectively
+utilize and conserve resources. </p>
+						</div>
+					</li>
+					<li>
+						<div class="banner-bottom-info">
+							<h3>Efficiency</h3>
+							<p>If you asked someone in agriculture 100 years ago how the industry would change in the century to come,
+								they’d probably focus more on climate conditions or water usage than on machines and sensors gathering and
+								transmitting actionable data.</p>
+						</div>
+					</li>
+					<li>
+						<div class="banner-bottom-info">
+							<h3>Convenience</h3>
+							<p>But today, a farmer, rancher, or conservationist with access to the right IoT architectures
+								can produce greater savings and better yields.The most effective way to do this is through actionable data,
+								and utilizing M2M communication makes the ongoing collection of that data simple and affordable.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+	</div>
+	</div>
+<!-- //banner-bottom -->
+<!-- about -->
+	<div id="about" class="about">
+	<div class="container">
+		<h3>ABOUT US</h3>
+		<p class="para">Servmill technologies provides secure connectivity for IoT devices. Servmill will powers a range of IoT applications across many industries, including smart cities,
+			agriculture, building controls, automotive, healthcare, government, defense, retail, and utilities.</p>
+		<div class="about-grids">
+<!-- Slider-starts-Here -->
+				<script src="js/responsiveslides.min.js"></script>
+				 <script>
+				    // You can also use "$(window).load(function() {"
+				    $(function () {
+				      // Slideshow 4
+				      $("#slider2").responsiveSlides({
+				        auto: true,
+				        pager: false,
+				        nav: false,
+				        speed: 500,
+				        namespace: "callbacks",
+				        before: function () {
+				          $('.events').append("<li>before event fired.</li>");
+				        },
+				        after: function () {
+				          $('.events').append("<li>after event fired.</li>");
+				        }
+				      });
+
+				    });
+				  </script>
+			<!--//End-slider-script -->
+		<!-- pop-up-box -->
+					<!-- script for pop-up-box -->
+					<script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<!-- //script for pop-up-box -->
+						<div id="small-dialog" class="mfp-hide">
+							<div class="image-top">
+								<img src="images/2-.jpg" alt="" />
+							</div>
+						</div>
+						<div id="small-dialog1" class="mfp-hide">
+							<div class="image-top">
+								<img src="images/1-.jpg" alt="" />
+							</div>
+						</div>
+						<div id="small-dialog2" class="mfp-hide">
+							<div class="image-top">
+								<img src="images/3-.jpg" alt="" />
+							</div>
+						</div>
+						<div id="small-dialog3" class="mfp-hide">
+							<div class="image-top">
+								<img src="images/3-.jpg" alt="" />
+							</div>
+						</div>
+						<div id="small-dialog4" class="mfp-hide">
+							<div class="image-top">
+								<img src="images/2-.jpg" alt="" />
+							</div>
+						</div>
+						<div id="small-dialog5" class="mfp-hide">
+							<div class="image-top">
+								<img src="images/1-.jpg" alt="" />
+							</div>
+						</div>
+						<div id="small-dialog6" class="mfp-hide">
+							<div class="image-top">
+								<img src="images/1-.jpg" alt="" />
+							</div>
+						</div>
+						<div id="small-dialog7" class="mfp-hide">
+							<div class="image-top">
+								<img src="images/2-.jpg" alt="" />
+							</div>
+						</div>
+						<div id="small-dialog8" class="mfp-hide">
+							<div class="image-top">
+								<img src="images/3-.jpg" alt="" />
+							</div>
+						</div>
+			<!-- pop-up-box -->
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+
+						});
+			</script>
+		<!-- //pop-up-box -->
+			<!-- Script Here --->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+
+						var filterList = {
+
+							init: function () {
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});
+
+							},
+
+							hoverEffect: function () {
+
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+									}
+								);
+							}
+						};
+						// Run the show!
+						filterList.init();
+					});
+					</script>
+		</div>
+	</div>
+	</div>
+<!-- //about -->
+<!-- pricing -->
+	<div id="pricing" class="pricing">
+	<div class="container">
+		<div class="price">
+			<h3>PRICING</h3>
+			<p class="para">100% Subscription model
+			<span>We can just share savings</span></p>
+		</div>
+	</div>
+	</div>
+<!-- //pricing -->
+<!-- gallery -->
+	<div id="products" class="portfolio">
+	<div class="container">
+<!-- Portfolio Starts Here -->
+	<div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="project">
+			<div class="portfolio-info">
+				<h3>Product</h3>
+				<p class="para">Control all your systems in one unique platform.</p>
+				<div class="strip"> </div>
+			</div>
+					<ul id="filters" class="clearfix">
+							<li><span class="filter" data-filter="app">Irrigation</span></li>
+							<li><span class="filter" data-filter="card">Lakes</span></li>
+							<li><span class="filter" data-filter="icon">Hydroponics</span></li>
+							<li><span class="filter" data-filter="web">Energy</span></li>
+							<li><span class="filter" data-filter="icon">Golf</span></li>
+							<li><span class="filter" data-filter="icon">Fertilization</span></li>
+							<br>
+							<li><span class="filter" data-filter="icon">Pumps</span></li>
+					</ul>
+	</div>
+			<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script>
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+				<!-- Portfolio Ends Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						var filterList = {
+							init: function () {
+								// MixItUp plugin
+							// http://mixitup.io
+							$('#portfoliolist').mixitup({
+								targetSelector: '.portfolio',
+								filterSelector: '.filter',
+								effects: ['fade'],
+								easing: 'snap',
+								// call the hover effect
+								onMixEnd: filterList.hoverEffect()
+							});
+						},
+						hoverEffect: function () {
+							// Simple parallax effect
+							$('#portfoliolist .portfolio').hover(
+								function () {
+									$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+									$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+								},
+								function () {
+									$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+									$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+								}
+							);
+						}
+					};
+					// Run the show!
+						filterList.init();
+					});
+					</script>
+	</div>
+	</div>
+<!-- //gallery -->
+<!-- contact -->
+	<div id="contact" class="contact">
+	<div class="container">
+		<h3>CONTACT</h3>
+		<p class="para"></p>
+   <span>contact@servmill.in</span><br><br>
+
+   <span><b>Servmill Technologies Pvt. Ltd.</b></span><br>
+	 <span>Flat no:402, Plot no: 376 & 377</span><br>
+	 <span>Mathrusree Nagar, Miyapur, Hyderabad, Telangana 500049</span><br>
+	 <span>Mobile no: (+91)-8978412740</span><br>
+	 <br>
+	</div>
+	</div>
+<!-- //contact -->
+<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<div class="temp">
+			<p>by <a href="#">Servmill</a></p>
+		</div>
+		<div class="footer-icons">
+			<ul>
+				<li><a href="https://www.facebook.com/servmill" class="facebook"> </a></li>
+				<li><a href="https://twitter.com/@servmill" class="twitter"> </a></li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
